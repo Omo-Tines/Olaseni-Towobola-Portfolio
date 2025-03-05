@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family:"Poppins", sans-serif;  
+    font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -16,7 +16,7 @@ html {
 }
 
 p {
-   color: rgb(85,85,85); 
+    color: rgb(85, 85, 85);
 }
 
 /* Transition */
@@ -29,7 +29,7 @@ a,
 /* Desktop Nav */
 
 nav,
-.nav-links{
+.nav-links {
     display: flex;
 }
 
@@ -42,7 +42,7 @@ nav {
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size:1.5rem;
+    font-size: 1.5rem;
 }
 
 a {
@@ -86,11 +86,11 @@ a:hover {
     cursor: pointer;
 }
 
-.hamburger-icon span{
+.hamburger-icon span {
     width: 100%;
     height: 2px;
     background-color: black;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
@@ -101,7 +101,7 @@ a:hover {
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-links a {
@@ -111,37 +111,39 @@ a:hover {
     font-size: 1.5rem;
     color: black;
     text-decoration: none;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-links li {
     list-style: none;
 }
 
-.menu-links.open{
+.menu-links.open {
     max-height: 300px;
 }
 
-.hamburger-icon.open span:first-child{
+.hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
 }
 
-.hamburger-icon.open span:nth-child(2){
+.hamburger-icon.open span:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger-icon.open span:last-child{
+.hamburger-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
 }
 
-.hamburger-icon span:first-child{
-    transform:none;
+.hamburger-icon span:first-child {
+    transform: none;
 }
-.hamburger-icon span:first-child{
+
+.hamburger-icon span:first-child {
     opacity: 1;
 }
-.hamburger-icon span:first-child{
-    transform:none;
+
+.hamburger-icon span:first-child {
+    transform: none;
 }
 
 /* SECTIONS */
@@ -158,7 +160,7 @@ section {
     display: flex;
 }
 
-/* Profile Section*/
+/* Profile Section */
 
 #profile {
     display: flex;
@@ -179,35 +181,29 @@ section {
     text-align: center;
 }
 
-.section__text p{ 
+.section__text p {
     font-weight: 600;
 }
 
-.section__text__p1{
-    text-align: center;
-}
-
 .section__text__p1 {
+    text-align: center;
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
 
-.section__text__p2{
-    text-align: center;
-}
-
 .section__text__p2 {
+    text-align: center;
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
 
 .title {
     font-size: 3rem;
-    text-align:center;
+    text-align: center;
 }
 
 #socials-container {
-    display:flex;
+    display: flex;
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
@@ -216,9 +212,11 @@ section {
 /* ICONS */
 
 .icon {
-    cursor:pointer;
+    cursor: pointer;
     height: 2rem;
 }
+
+/* BUTTONS */
 
 .btn-container {
     display: flex;
@@ -236,17 +234,17 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-    border: rgb(53,53,53) 0.1rem solid;
+    border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .btn-color-1,
 .btn-color-2:hover {
-    background: rgb(53,53,53);
+    background: rgb(53, 53, 53);
     color: white;
 }
 
 .btn-color-1:hover {
-    background: rgb(0,0,0);
+    background: rgb(0, 0, 0);
 }
 
 .btn-color-2 {
@@ -254,12 +252,10 @@ section {
 }
 
 .btn-color-2:hover {
-    border: rgb(255,255,255) 0.1rem solid;
+    border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-.btn-container {
-    gap:1rem;
-}
+/* ABOUT SECTION */
 
 #about {
     position: relative;
@@ -278,7 +274,8 @@ section {
 
 .about-containers,
 .about-details-container {
-    display: flex
+    display: flex;
+    flex-direction: row;
 }
 
 .about-pic {
@@ -292,13 +289,13 @@ section {
 }
 
 .details-container {
-    padding:1.5rem;
-    flex:1;
+    padding: 1.5rem;
+    flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
-    text-align:center;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
 }
 
 .section-container {
@@ -312,14 +309,14 @@ section {
     margin: auto 0;
 }
 
-/* Experience */
+/* EXPERIENCE SECTION */
 
 #experience {
     position: relative;
 }
 
 .experience-sub-title {
-    color: rgb(85,85,85);
+    color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -351,20 +348,20 @@ article .icon {
     cursor: default;
 }
 
-/* Projects Section */
+/* PROJECTS SECTION */
 
-#project {
+#projects {
     position: relative;
 }
 
 .color-container {
-    border-color: rgb(163,163,163);
-    background: rgb(250,250,250);
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
 }
 
 .project-img {
     border-radius: 2rem;
-    width:90%;
+    width: 90%;
     height: 90%;
 }
 
@@ -375,10 +372,10 @@ article .icon {
 
 .project-btn {
     color: black;
-    border-color: rgb(163,163,163);
+    border-color: rgb(163, 163, 163);
 }
 
-/* Contact*/
+/* CONTACT */
 
 #contact {
     display: flex;
@@ -391,9 +388,9 @@ article .icon {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
-    background: (250,250,250);
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -402,7 +399,7 @@ article .icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:0.5rem;
+    gap: 0.5rem;
     margin: 1rem;
 }
 
@@ -418,7 +415,12 @@ article .icon {
     height: 2.5rem;
 }
 
-/* Footer Section */
+/* FOOTER SECTION */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
 
 footer p {
     text-align: center;
