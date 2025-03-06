@@ -275,7 +275,7 @@ section {
 .about-containers,
 .about-details-container {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
 }
 
 .about-pic {
